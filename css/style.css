@@ -1,0 +1,762 @@
+
+
+
+* {
+    padding: 0;
+    margin: 0;
+}
+
+
+html, body {
+
+     overflow-x: hidden;
+
+}
+
+section, footer {
+
+   padding-top: 120px;
+   padding-bottom: 120px;
+
+}
+
+h1, h2, h3, h4 {
+    
+    text-transform: uppercase;  
+}
+
+h1 {
+    
+    
+    font-size: 6em;
+    letter-spacing: 20px;
+    font-weight: 700;
+    font-family: 'Josefin Sans', sans-serif;
+    color: white;  
+}
+
+h2 {
+
+    font-family: 'Raleway', sans-serif;
+    text-align: center;
+    color: rgba(0,0,0,.8);
+    font-size: 2.5em;
+    letter-spacing: 2px;
+    margin-bottom: 30px;
+}
+
+h3 {
+
+    font-family: 'Raleway',sans-serif;
+    color: rgba(0,0,0,.8);
+    font-size: 1.3em;
+    text-align: center;
+}
+
+
+
+h4 {
+
+    font-family: 'Raleway', sans-serif;
+    color: white;
+    font-size: 2em;
+    text-align: left;
+    letter-spacing: 2px;
+}
+
+p {
+    font-family: 'Rajdhani', sans-serif;
+    color: rgba(0,0,0,.8);
+    font-size: 1.2em;
+    line-height: 1.5em;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+    font-weight: 600;
+}
+
+
+hr {
+
+    width: auto;
+}
+
+h2 span {
+
+    font-weight: 400;
+}
+
+.italica {
+
+    font-style: italic;
+}
+
+.greySection {
+
+    background-color: rgba(0,0,0,.1);
+}
+
+.boton {
+    display: block;
+    padding: 7px 0;
+    text-transform: uppercase;
+    font-size: 1.1em;
+    letter-spacing: 2px;
+    margin: 0 auto;
+    width: 280px;
+    text-align: center;
+}
+
+.boton.oscuro {
+    border: 1px solid #555;
+    color: #fff;
+    background-color: #111;
+}
+
+.boton.claro {
+
+    color: white;
+    background-color: rgba(255,255,255,.9);
+    color: #270905;
+    font-family: 'Raleway', sans-serif;
+    margin-top: 40px;
+    float: left;
+}
+
+/* ------- OVERLAY -------- */
+
+#overlay {
+    height: 100vh;
+    width: 100%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 9999;
+    background-color: #fcfafa;
+    color: black;
+    line-height: 100vh;
+    text-align: center;
+    font-size: 4em;
+}
+
+#overlay img {
+
+    width: 70px;
+    animation: rotar 6s infinite;
+}
+
+@keyframes rotar {
+
+    from {
+        transform: rotate(0deg);
+    }
+
+    to {
+        transform: rotate(360deg)
+    }
+
+}
+
+
+/* -----BARRA NAVEGACION ------*/
+
+nav {
+
+    height: 70px;
+    width: 100%;
+    background: rgba(0,0,0,.9);
+    z-index: 9999;
+    position: fixed;
+    top: 0;
+    left: 0;
+}
+
+nav ul {
+
+    float: right;
+    margin-right: 20px;
+}
+
+nav li {
+
+    display: inline-block;
+    list-style: none;
+}
+
+
+nav a {
+
+    color: white;
+    list-style: none;
+    text-transform: uppercase;
+    font-family: 'Rajdhani', sans-serif;
+    letter-spacing: 2px;
+    font-size: 1.2em;
+    padding: 15px;
+    line-height: 65px;
+    font-weight: 400;
+}
+
+
+.barras {
+    display: none;
+    cursor: pointer;
+    position: fixed;
+    top: 0px;
+    right: 20px;
+    font-size: 4em;
+    color: #d60101;
+}
+ 
+
+
+ #cerrar {
+
+    float: right;
+    padding: 10px;
+    visibility: collapse;
+
+ }
+
+ .logo {
+
+   width: 60px;
+   vertical-align: middle;
+ }
+
+
+/* ------ HERO -------- */
+
+#hero {
+ 	 	
+    height: 100vh;
+    background: rgba(0,0,0,0) url("../img/backgrounds/keith-wong-736441-unsplash.jpg") no-repeat fixed center / cover;
+    text-align: center;
+    text-transform: uppercase;
+}
+
+#hero span {
+
+    color: red;
+}
+
+
+#fondoNegro {
+    
+    background-color: rgba(0,0,0,.5);
+    margin-top: 400px; /* va a dar problemas en el movil*/
+    padding: 40px;
+   
+}
+
+#fotoNocturna {
+
+    font-family: "Josefin Sans",sans-serif;
+    padding-top: 15px;
+    color: white;
+    letter-spacing: 2px;
+}
+
+/* ------- SECCION CONTENT -------- */
+
+#content {
+
+    margin-right: 60px;
+    margin-left: 60px;
+}
+
+
+#content .marginTop {
+
+    margin: 100px 0px;
+    padding: 0px 60px;
+}
+
+#content p {
+
+    font-family: "Raleway",sans-serif;
+    text-align: center;
+    font-size: 1.2em;
+    color: rgba(0,0,0,.7);
+    padding-top: 50px;
+}
+
+
+#content img {
+
+    max-width: 100%;
+    margin: auto;
+    display: block;
+    margin-bottom: 50px;
+    margin-top: 50px;
+}
+
+/* -------SECCION NATURALEZA ---------*/
+
+
+#naturaleza {
+
+    background: rgb(0,0,0) url(../img/backgrounds/mark-basarab-122141-unsplash.jpg) no-repeat fixed center top / cover;
+}
+
+#naturaleza h4 {
+
+    line-height: 1.8em;
+    margin-bottom: 30px;
+}
+
+
+#naturaleza p {
+
+    color: white;
+    font-size: 1.1em;
+    font-style: justify;
+}
+
+#naturalezaDerecha {
+
+   font-family: 'Open Sans', sans-serif;
+   font-weight: 300;
+}
+
+/*----- SECCION SOBRE NOSOTROS ------*/
+
+#sobreNosotros h2 {
+
+    text-align: left;
+
+}
+
+#fotografaRojo {
+
+    width: 70%;
+    opacity: 0;
+    transform: translate(20px);
+    transition: all .5s;
+
+}
+
+#fotografaRojo.visible {
+    transform: translate(0px);
+    opacity: 1;
+}
+
+
+/*------- SECCION GUIAS ------*/
+
+#guias {
+
+    margin-left: 70px;
+    margin-right: 70px;
+ 
+}
+
+#guias .photo {
+
+    display: block;
+    margin: auto;
+    margin-top: 50px;
+    width: 80%;
+    transition: all .5s ease;
+
+}
+
+
+#guias .photo:hover {
+
+    transform: scale(1.25);
+}
+
+
+
+#guias figcaption > p {
+
+    text-align: center;
+    margin-top: 40px;
+    font-weight: 700;
+}
+
+#guias p {
+    
+    text-align: center;
+
+}
+
+/* ------ SLIDER ------- */
+
+#c-slider {
+    margin: auto;
+    width: 80%;
+    max-width: 1000px;
+    position: relative;
+    overflow: hidden;
+
+}
+
+#slider {
+
+    display: flex;
+    width: 400%;
+
+}
+
+#slider section {
+
+    width: 100%;
+
+}
+
+#slider img {
+
+    display: block;
+    width: 100%;
+    height: 100%;
+}
+
+#btn-prev, #btn-next {
+    width: 40px:
+    height: 40px;
+  
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    line-height: 40px;
+    font-size: 30px;
+    font-weight: bold;
+    text-align: center;
+    font-family: monospace;
+    cursor: pointer;
+    color: white;
+   
+}
+
+#btn-prev, #btn-next:hover {
+
+}
+
+#btn-prev {
+    left: 30px;
+}
+
+#btn-next {
+    right: 30px;
+}
+
+/* seccion nite */
+
+
+
+#nite {
+
+    font-family: 'Josefin Sans', sans-serif;
+    padding-bottom: 0px;
+    padding-top: 0px;
+}
+
+
+#nite p {
+
+    color: white;
+    background-color: rgba(0,0,0,.7);
+    padding: 10px 10px;
+    font-size: 1em;
+    letter-spacing: 1px;
+
+}
+
+.foto1 {
+
+    background: rgba(0,0,0,.7) url(../img/resize/karol-smoczynski-616502-unsplash.jpg) no-repeat center / cover;
+}
+
+.foto2 {
+
+    background: rgba(0,0,0,.7) url(../img/resize/clem-onojeghuo-207791-unsplash.jpg) no-repeat center / cover;
+}
+
+
+.foto3 {
+
+    background: rgba(0,0,0,.7) url(../img/resize/jack-finnigan-552585-unsplash.jpg) no-repeat center / cover;
+}
+
+.foto4 {
+
+    background: rgba(0,0,0,.7) url(../img/resize/steve-roe-676488-unsplash.jpg) no-repeat center / cover;
+}
+
+.picture {
+
+    height: 70vh;
+    width: 100%;
+}
+
+/*seccion contacto*/
+
+#contacto {
+
+    background: rgba(0,0,0,.7);
+  
+}
+
+#contacto h4 {
+
+    font-size: 1.4em;
+    margin-bottom: 30px;
+   padding-left: 30px;
+
+}
+
+
+#contacto input:not(.boton), #contacto textarea {
+    width: 100%;
+    margin-top: 25px;
+    padding: 5px 20px 20px 14px;
+    text-transform: uppercase;
+    font-family: "Lato",sans-serif;
+    font-size: 1em;
+    font-weight: 300;
+    line-height: 1em;
+    color: #fff;
+    background: transparent;
+    border: none;
+    border-bottom: 1px solid #fff;
+}
+
+#contacto textarea {
+
+    height: 200px
+}
+
+#contacto .boton {
+
+    margin-top: 40px;
+}
+
+/* alerta contacto */
+
+#alerta {
+    background: #e97e7e;
+    position: fixed;
+    bottom: 100px;
+    left: 0;
+    transition: all .5s;
+    color: rgb(50,50,50);
+    transform: translateX(-100%);
+}
+
+#alerta.visible{
+    transform: translateX(0);
+}
+
+ #alerta p {
+    padding: 12px 10px;
+    border: 2px solid black;
+    margin: 10px 35px;
+    text-align: center;
+    width: 300px;
+    font-size: 14px;
+    line-height: 16px
+}
+
+/*seccion footer*/
+
+footer {
+
+    background: black;
+    color: white;
+
+}
+
+footer img {
+
+    width: 80px;
+}
+
+
+
+footer p {
+
+    color: white;
+    text-align: left;
+    letter-spacing: 2px;
+    
+}
+
+footer ul {
+
+    margin-top: 40px;
+}
+
+footer li {
+
+    list-style: none;
+}
+
+
+#redes-sociales li {
+
+    display: inline;
+
+}
+
+#redes-sociales li {
+
+    font-size: 1.5em;
+    padding: 5px 5px;
+}
+
+#gracias {
+
+    font-size: .8em;
+    margin-top: 40px;
+}
+
+#aviso-legal {
+
+    text-align: center;
+    margin-top: 40px;
+}
+
+/*media queries*/
+
+@media screen and (max-width: 970px) {
+
+h1 {
+
+    font-size: 3em;
+}
+
+
+h2, h3, h4 {
+
+    font-size: 1.5em;
+}
+
+p {
+
+    font-size: 1em;
+    padding: 30px;
+}
+
+
+
+.barras {
+    display: block;
+}
+
+#cerrar {
+
+    visibility: visible;
+}
+
+nav {
+    width: calc(100% - 50px);
+    height: 100vh;  
+    transform: translateX(-100%);
+    transition: transform .5s;
+}
+
+nav.abierto {
+    transform: translateX(0)
+}
+
+nav ul {
+    
+    float: none;
+    margin: 0;
+    padding: 0
+}
+
+nav li {
+    display: block;
+    margin: auto;
+    list-style: none;
+    text-align: center;
+    width: 300px;
+}
+
+#content .marginTop {
+
+    margin: 50px 0px;
+    padding: 0px 30px;
+}
+
+#guias img {
+
+    width: 40%;
+}
+
+
+#nite .picture {
+
+    height: 50vh;
+}
+
+#sobreNosotros #fotografaRojo {
+
+    margin-top: 50px;
+    width: 50%;
+
+}
+
+#naturaleza {
+
+    padding: 50px;
+}
+
+#naturaleza h4 {
+
+    line-height: 1.8;
+    margin-bottom: 30px;
+}
+
+
+#naturaleza p {
+
+    color: white;
+    font-size: 1em;
+    font-style: justify;
+}
+
+}
+
+
+@media screen and (max-width: 780px) {
+
+#content {
+
+    margin-left: 30px;
+    margin-right: 30px;
+}
+
+h2 {
+
+    font-size: 1.7em;
+}
+
+.boton {
+    float: none;
+    margin: 40px 10%;
+    display: block;
+    text-align: center;
+    padding: 20px 0;
+    width: 80%;
+}
+
+#sobreNosotros #fotografaRojo {
+
+    display: none;
+
+}
+
+#guias img {
+
+    width: 40%;
+}
+
+
+
+
